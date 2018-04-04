@@ -1,0 +1,15 @@
+'use strict'
+
+class #{entity_name}Service {
+  /**
+   * @param {#{entity_name}Storage}    storage    #{entity_name} storage instance.
+   * @param {#{entity_name}Repository} repository #{entity_name} repository instance.
+   */
+  constructor (storage, repository) {
+    this.$storage = storage
+    this.$repository = repository
+  }
+}
+
+module.exports = #{entity_name}Service
+module.exports.#{entity_name}Service = #{entity_name}Service

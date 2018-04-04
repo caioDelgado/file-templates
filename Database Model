@@ -1,0 +1,25 @@
+'use strict'
+
+const { Schema } = require('mongoose')
+
+const properties = {
+
+}
+
+const options = {
+  collection: '#{collection_name}',
+  id: false,
+  safe: true,
+  strict: true,
+  timestamps: false,
+  versionKey: false
+}
+
+const schema = new Schema(properties, options)
+
+const factory = (connection) => {
+  return connection.model('#{model_name}', schema)
+}
+
+module.exports = schema
+module.exports.factory = factory

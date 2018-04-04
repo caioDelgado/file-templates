@@ -1,0 +1,14 @@
+'use strict'
+
+const Error = require('./error')
+const { format } = require('util')
+
+const ERR_MESSAGE = ''
+
+class #{error_name}Error extends Error {
+  constructor (params) {
+    super(format(ERR_MESSAGE, params))
+  }
+}
+
+module.exports = #{error_name}Error

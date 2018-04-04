@@ -1,0 +1,13 @@
+'use strict'
+
+class #{entity_name}Repository {
+  /**
+   * @param {Object} model #{entity_name} model.
+   */
+
+  constructor (model) {
+    this.$model = model
+  }
+}
+
+module.exports = #{entity_name}Repository
